@@ -1,10 +1,8 @@
 <?php
 
-use App\Models\Vinyl;
-use Illuminate\Http\Request;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\VinylController;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------

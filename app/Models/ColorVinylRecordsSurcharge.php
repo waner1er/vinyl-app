@@ -17,5 +17,6 @@ class ColorVinylRecordsSurcharge extends Model
         'isFixedPrice',
         'fixed_price',
     ];
+
     public $timestamps = false;
 }

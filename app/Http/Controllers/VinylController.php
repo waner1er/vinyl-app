@@ -13,6 +13,7 @@ class VinylController extends Controller
     public function index()
     {
         $vinyls = Vinyl::all();
+
         return response()->json($vinyls, 200);
     }
 

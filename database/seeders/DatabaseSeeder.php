@@ -5,11 +5,6 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Models\User;
 use Illuminate\Database\Seeder;
-use Database\Seeders\CuttingSeeder;
-use Database\Seeders\BlackVinylSeeder;
-use Database\Seeders\PictureDiscSeeder;
-use Database\Seeders\TestPressingSeeder;
-
 
 class DatabaseSeeder extends Seeder
 {
@@ -24,8 +19,6 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-
-
 
         $this->call(CuttingSeeder::class);
         $this->call(TestPressingSeeder::class);

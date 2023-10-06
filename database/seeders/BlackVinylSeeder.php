@@ -32,7 +32,7 @@ class BlackVinylSeeder extends Seeder
                 '15000_19999' => 0.65,
                 '20000_29999' => 0.65,
                 '30000_49999' => 4999.90,
-                '50000_100000' => 100000.00
+                '50000_100000' => 100000.00,
             ],
             [
                 'title' => 'BV-10-001',
@@ -96,7 +96,7 @@ class BlackVinylSeeder extends Seeder
                 '20000_29999' => 1.345,
                 '30000_49999' => 1.345,
                 '50000_100000' => 1.342,
-            ]
+            ],
         ];
 
         foreach ($blackVinyls as $blackVinyl) {

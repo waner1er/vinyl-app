@@ -8,11 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class TestPressing extends Model
 {
     use HasFactory;
+
     protected $fillable = [
         'title',
         'description',
         'disc_size',
-        'price'
+        'price',
     ];
 
     public $timestamps = false;

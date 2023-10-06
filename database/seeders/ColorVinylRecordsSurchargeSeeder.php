@@ -2,9 +2,8 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Seeder;
 use App\Models\ColorVinylRecordsSurcharge;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
 
 class ColorVinylRecordsSurchargeSeeder extends Seeder
 {
@@ -20,7 +19,7 @@ class ColorVinylRecordsSurchargeSeeder extends Seeder
                 'disc_size' => '7',
                 'price' => 0.31,
                 'isFixedPrice' => false,
-                'fixed_price' => null
+                'fixed_price' => null,
             ],
             [
                 'title' => 'CVRS-7-002',
@@ -28,7 +27,7 @@ class ColorVinylRecordsSurchargeSeeder extends Seeder
                 'disc_size' => '7',
                 'price' => 0.44,
                 'isFixedPrice' => false,
-                'fixed_price' => null
+                'fixed_price' => null,
             ],
             [
                 'title' => 'CVRS-7-003',
@@ -36,7 +35,7 @@ class ColorVinylRecordsSurchargeSeeder extends Seeder
                 'disc_size' => '7',
                 'price' => 0.47,
                 'isFixedPrice' => false,
-                'fixed_price' => null
+                'fixed_price' => null,
             ],
             [
                 'title' => 'CVRS-7-004',
@@ -268,7 +267,6 @@ class ColorVinylRecordsSurchargeSeeder extends Seeder
                 'isFixedPrice' => true,
                 'fixed_price' => 39,
             ],
-
 
             [
                 'title' => 'CVRS-12-001',

@@ -15,9 +15,6 @@ class Cutting extends Model
         'disc_size',
         'price',
     ];
+
     public $timestamps = false;
-
-
-
-
 }
