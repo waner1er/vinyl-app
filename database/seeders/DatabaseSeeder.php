@@ -25,5 +25,6 @@ class DatabaseSeeder extends Seeder
         $this->call(BlackVinylSeeder::class);
         $this->call(ColorVinylrecordsSurchargeSeeder::class);
         $this->call(PictureDiscSeeder::class);
+        $this->call(PrintLabelSeeder::class);
     }
 }

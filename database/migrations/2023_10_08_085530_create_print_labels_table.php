@@ -10,11 +10,12 @@ return new class () extends Migration {
      */
     public function up(): void
     {
-        Schema::create('picture_discs', function (Blueprint $table) {
+        Schema::create('print_labels', function (Blueprint $table) {
             $table->id();
             $table->string('title');
             $table->string('description');
             $table->enum('disc_size', ['7', '10', '12'])->nullable();
+            $table->decimal('assembly')->nullable();
             $table->decimal('100_199')->nullable();
             $table->decimal('200_249')->nullable();
             $table->decimal('250_499')->nullable();
@@ -29,6 +30,7 @@ return new class () extends Migration {
             $table->decimal('20000_29999')->nullable();
             $table->decimal('30000_49999')->nullable();
             $table->decimal('50000_100000')->nullable();
+
         });
     }
 
@@ -37,6 +39,6 @@ return new class () extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('picture_discs');
+        Schema::dropIfExists('print_labels');
     }
 };
