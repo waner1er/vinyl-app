@@ -28,5 +28,7 @@ class DatabaseSeeder extends Seeder
         $this->call(PictureDiscSeeder::class);
         $this->call(PrintLabelSeeder::class);
         $this->call(SurchargeForSpecialSeeder::class);
+
+        $this->call(VinylCaseSeeder::class);
     }
 }

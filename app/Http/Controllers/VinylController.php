@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Vinyl;
+use App\Models\VinylCases;
 use Illuminate\Http\Request;
 
 class VinylController extends Controller
@@ -12,9 +13,12 @@ class VinylController extends Controller
      */
     public function index()
     {
-        $vinyls = Vinyl::all();
+        $vinyls = VinylCases::all();
 
-        return response()->json($vinyls, 200);
+
+
+
+        return response()->json($vinyls);
     }
 
     /**
@@ -38,7 +42,12 @@ class VinylController extends Controller
      */
     public function getVinyl(Vinyl $vinyl)
     {
-        return response()->json($vinyl, 200);
+        return response()->json(
+            [
+                'title' => $vinyl->title,
+                'toto' => $vinyl->id
+            ]
+        );
     }
 
     /**

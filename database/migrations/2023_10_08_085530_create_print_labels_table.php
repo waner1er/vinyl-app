@@ -16,7 +16,7 @@ return new class () extends Migration {
             $table->string('description');
             $table->enum('disc_size', ['7', '10', '12'])->nullable();
             $table->decimal('assembly')->nullable();
-            $table->decimal('100_199')->nullable();
+            $table->decimal('cent_deux_cent')->nullable();
             $table->decimal('200_249')->nullable();
             $table->decimal('250_499')->nullable();
             $table->decimal('500_999')->nullable();
