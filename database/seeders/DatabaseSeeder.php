@@ -15,10 +15,11 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        User::factory()->create([
+            'name' => 'Admin',
+            'email' => 'admin@admin.com',
+            'password' => bcrypt('password'),
+        ]);
 
         $this->call(CuttingSeeder::class);
         $this->call(TestPressingSeeder::class);
@@ -27,5 +28,7 @@ class DatabaseSeeder extends Seeder
         $this->call(PictureDiscSeeder::class);
         $this->call(PrintLabelSeeder::class);
         $this->call(SurchargeForSpecialSeeder::class);
+
+        $this->call(VinylCaseSeeder::class);
     }
 }

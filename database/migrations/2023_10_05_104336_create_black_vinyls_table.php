@@ -21,7 +21,7 @@ return new class () extends Migration {
             $table->decimal('200_249')->nullable();
             $table->decimal('250_499')->nullable();
             $table->decimal('500_999')->nullable();
-            $table->decimal('1000_1199')->nullable();
+            $table->decimal('1000_1999')->nullable();
             $table->decimal('2000_2999')->nullable();
             $table->decimal('3000_4999')->nullable();
             $table->decimal('5000_7499')->nullable();
